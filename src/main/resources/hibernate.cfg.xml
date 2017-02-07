@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd"> 
+    
+<hibernate-configuration>
+    <session-factory>   
+        <mapping class="md.cnam.helpdesk.entity.Meniu" />
+        <mapping class="md.cnam.helpdesk.entity.AtribMeniuRol" />
+        <mapping class="md.cnam.helpdesk.entity.AtribUserRol" />
+        <mapping class="md.cnam.helpdesk.entity.ClDiviziuni" />
+        <mapping class="md.cnam.helpdesk.entity.ClCategorii" />
+        <mapping class="md.cnam.helpdesk.entity.ClUseri" />
+        <!--<mapping class="md.cnam.helpdesk.model.UserSession" />-->
+        <mapping class="md.cnam.helpdesk.entity.ClDomeniu" />
+        <mapping class="md.cnam.helpdesk.entity.ClPrioritate" />
+        <mapping class="md.cnam.helpdesk.entity.Solicitare" />
+        <mapping class="md.cnam.helpdesk.entity.ClSolicitareTip" />
+        <mapping class="md.cnam.helpdesk.entity.ClSolicitareStatut" />
+        <mapping class="md.cnam.helpdesk.entity.ExecutorHistory" />
+        <mapping class="md.cnam.helpdesk.entity.Executare" />
+        <mapping class="md.cnam.helpdesk.entity.Messages" />
+        <mapping class="md.cnam.helpdesk.entity.Absente" />
+        <mapping class="md.cnam.helpdesk.entity.TiketOpenHistory" />
+        <mapping class="md.cnam.helpdesk.entity.Files" />
+        <mapping class="md.cnam.helpdesk.entity.ExchThemes" />
+        <mapping class="md.cnam.helpdesk.entity.ExchFiles" />
+        <mapping class="md.cnam.helpdesk.entity.Resources" />
+    </session-factory>         
+</hibernate-configuration>

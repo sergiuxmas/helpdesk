@@ -1,0 +1,21 @@
+2016-03-16 13:33:11 INFO  ContextLoader:285 - Root WebApplicationContext: initialization started
+2016-03-16 13:33:12 INFO  XmlWebApplicationContext:513 - Refreshing Root WebApplicationContext: startup date [Wed Mar 16 13:33:12 EET 2016]; root of context hierarchy
+2016-03-16 13:33:12 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2016-03-16 13:33:12 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [datasource.properties]
+2016-03-16 13:33:12 INFO  Version:27 - HV000001: Hibernate Validator 5.1.2.Final
+2016-03-16 13:33:12 INFO  Version:37 - Hibernate Commons Annotations 3.2.0.Final
+2016-03-16 13:33:13 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2016-03-16 13:33:13 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-16 13:33:13 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-16 13:33:13 INFO  Configuration:2109 - HHH000044: Configuring from URL: file:/C:/Users/Admin/Documents/NetBeansProjects/Helpmvc/target/Helpmvc-1.0/WEB-INF/classes/hibernate.cfg.xml
+2016-03-16 13:33:13 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-03-16 13:33:13 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2016-03-16 13:33:34 WARN  JdbcServicesImpl:204 - HHH000342: Could not obtain connection to query metadata : Cannot create PoolableConnectionFactory (Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.)
+2016-03-16 13:33:34 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-03-16 13:33:34 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+2016-03-16 13:33:34 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-16 13:33:34 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-16 13:33:34 INFO  HibernateTransactionManager:339 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@39daeba6] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-16 13:33:34 INFO  ContextLoader:325 - Root WebApplicationContext: initialization completed in 22388 ms

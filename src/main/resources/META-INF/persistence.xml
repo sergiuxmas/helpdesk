@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="md.cnam_helpdesk3_war_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>md.cnam.helpdesk.model.ClCategorii</class>
+    <class>md.cnam.helpdesk.model.ClUseri</class>
+    <class>md.cnam.helpdesk.entity.ClCategorii</class>
+    <class>md.cnam.helpdesk.entity.ClDiviziuni</class>
+    <class>md.cnam.helpdesk.entity.ClUseri</class>
+    <class>md.cnam.helpdesk.model.ClDiviziuniJson</class>
+    <class>md.cnam.helpdesk.entity.Solicitare</class>
+    <class>md.cnam.helpdesk.entity.Executare</class>
+    <class>md.cnam.helpdesk.entity.ClDomeniu</class>
+    <class>md.cnam.helpdesk.entity.ClPrioritate</class>
+    <class>md.cnam.helpdesk.entity.ClSolicitareTip</class>
+    <class>md.cnam.helpdesk.entity.ExecutorHistory</class>
+    <class>md.cnam.helpdesk.entity.Messages</class>
+    <class>md.cnam.helpdesk.entity.ClSolicitareStatut</class>
+    <class>md.cnam.helpdesk.entity.Absente</class>
+    <class>md.cnam.helpdesk.entity.Meniu</class>
+    <class>md.cnam.helpdesk.entity.AtribMeniuRol</class>
+    <class>md.cnam.helpdesk.entity.TiketOpenHistory</class>
+    <class>md.cnam.helpdesk.entity.Files</class>
+    <class>md.cnam.helpdesk.entity.ExchThemes</class>
+    <class>md.cnam.helpdesk.entity.ExchFiles</class>
+    <class>md.cnam.helpdesk.entity.Resources</class>
+    <class>md.cnam.helpdesk.entity.AtribUserRol</class>
+    <class>md.cnam.helpdesk.entity.ClDiviziuni_1</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://192.168.1.197:3306/helpdesk?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.password" value="free"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+    </properties>
+  </persistence-unit>
+</persistence>

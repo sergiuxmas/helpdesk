@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd"> 
+
+<tiles-definitions>
+    <definition name="default" template="/WEB-INF/jsp/defaultLayout/layout.jsp">
+        <put-attribute name="meta" value="/WEB-INF/jsp/defaultLayout/meta.jsp" />
+        <put-attribute name="header" value="/WEB-INF/jsp/defaultLayout/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/jsp/defaultLayout/menu.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jsp/defaultLayout/body.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/defaultLayout/footer.jsp" />
+    </definition>
+    <definition name="authorization" template="/WEB-INF/jsp/authorization/layout.jsp">
+        <put-attribute name="meta" value="/WEB-INF/jsp/authorization/meta.jsp" />
+        <put-attribute name="header" value="/WEB-INF/jsp/authorization/header.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jsp/authorization/body.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/authorization/footer.jsp" />
+    </definition>
+    <definition name="ajax" template="/WEB-INF/jsp/ajaxLayout/ajax.jsp">
+        <put-attribute name="meta" value="/WEB-INF/jsp/ajaxLayout/meta.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jsp/ajaxLayout/body.jsp" />
+    </definition>
+    <definition name="ajaxwithmeta" template="/WEB-INF/jsp/ajaxLayout/ajax.jsp">
+        <put-attribute name="meta" value="/WEB-INF/jsp/defaultLayout/meta.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jsp/ajaxLayout/body.jsp" />
+    </definition>
+    <definition name="error" extends="default">  
+        <put-attribute name="body" value="/WEB-INF/jsp/errorsLayout/error.jsp" />
+    </definition>
+    
+    <definition name="authRedirect" extends="default">
+        <put-attribute name="body" value="/WEB-INF/jsp/defaultLayout/authRedirect.jsp" />
+    </definition>
+    <definition name="admin.meniu" extends="default">  
+        <put-attribute name="body" value="/WEB-INF/jsp/administrare/meniu.jsp" />
+        <put-attribute name="meta" value="/WEB-INF/jsp/administrare/meta.jsp" />
+    </definition>
+    <definition name="admin.atribRol" extends="default">  
+        <put-attribute name="body" value="/WEB-INF/jsp/administrare/atribRol.jsp" />
+        <put-attribute name="meta" value="/WEB-INF/jsp/administrare/meta.jsp" />
+    </definition>
+    <definition name="admin.atribRolAjax" extends="ajax">  
+        <put-attribute name="body" value="/WEB-INF/jsp/administrare/atribRolAjax.jsp" />
+    </definition>
+    <definition name="admin.categorii" extends="default">  
+        <put-attribute name="body" value="/WEB-INF/jsp/administrare/categorii.jsp" />
+        <put-attribute name="meta" value="/WEB-INF/jsp/administrare/meta.jsp" />
+    </definition>
+    <definition name="admin.diviziuni" extends="default">  
+        <put-attribute name="body" value="/WEB-INF/jsp/administrare/diviziuni.jsp" />
+        <put-attribute name="meta" value="/WEB-INF/jsp/administrare/meta.jsp" />
+    </definition>
+    <definition name="admin.domenii" extends="default">  
+        <put-attribute name="body" value="/WEB-INF/jsp/administrare/domenii.jsp" />  
+        <put-attribute name="meta" value="/WEB-INF/jsp/administrare/meta.jsp" />
+    </definition>
+    <definition name="admin.regAbsente" extends="default">  
+        <put-attribute name="body" value="/WEB-INF/jsp/administrare/regAbsente.jsp" />  
+        <put-attribute name="meta" value="/WEB-INF/jsp/administrare/meta.jsp" />
+    </definition>
+     <definition name="admin.tiket.view" extends="default">  
+        <put-attribute name="body" value="/WEB-INF/jsp/administrare/tiketView.jsp" />  
+    </definition>
+    <definition name="admin.tiket.viewAjax" extends="ajax">  
+        <put-attribute name="body" value="/WEB-INF/jsp/administrare/tiketView.jsp" />  
+    </definition>
+    <definition name="admin.users" extends="default">  
+        <put-attribute name="body" value="/WEB-INF/jsp/administrare/utilizatori.jsp" />  
+        <put-attribute name="meta" value="/WEB-INF/jsp/administrare/meta.jsp" />
+    </definition>
+    <definition name="admin.tiket.list" extends="default">  
+        <put-attribute name="body" value="/WEB-INF/jsp/administrare/tiketList.jsp" />  
+    </definition>
+    <definition name="admin.resources" extends="default">  
+        <put-attribute name="body" value="/WEB-INF/jsp/administrare/resources.jsp" />
+        <put-attribute name="meta" value="/WEB-INF/jsp/administrare/meta.jsp" />
+    </definition>
+    
+    <definition name="userDSI.tiket.list" extends="default">  
+        <put-attribute name="body" value="/WEB-INF/jsp/userDSI/tiketList.jsp" />  
+    </definition>
+    <definition name="userDSI.tiket.view" extends="default">  
+        <put-attribute name="body" value="/WEB-INF/jsp/userDSI/tiketView.jsp" />  
+    </definition>
+    <definition name="userDSI.tiket.viewAjax" extends="ajax">  
+        <put-attribute name="body" value="/WEB-INF/jsp/userDSI/tiketView.jsp" />  
+    </definition>
+    <definition name="userDSI.tiket.messagesList" extends="ajax">  
+        <put-attribute name="body" value="/WEB-INF/jsp/userDSI/messagesList.jsp" />  
+    </definition>
+    
+    <definition name="tiket.new" extends="default">  
+        <put-attribute name="body" value="/WEB-INF/jsp/all/tiketNew.jsp" />  
+    </definition>
+    <definition name="tiket.edit" extends="default">  
+        <put-attribute name="body" value="/WEB-INF/jsp/all/tiketEdit.jsp" />  
+    </definition>
+    <definition name="user.modify" extends="default">  
+        <put-attribute name="body" value="/WEB-INF/jsp/all/changePassword.jsp" />  
+    </definition>
+    <definition name="user.modifyProfil" extends="default">  
+        <put-attribute name="body" value="/WEB-INF/jsp/all/modifyProfil.jsp" />  
+    </definition>
+    <definition name="user.tiket.list" extends="default">  
+        <put-attribute name="body" value="/WEB-INF/jsp/all/tiketList.jsp" />  
+    </definition>
+    <definition name="user.tiket.view" extends="default">  
+        <put-attribute name="body" value="/WEB-INF/jsp/all/tiketView.jsp" />  
+    </definition>
+    
+    <!-- exchange -->
+    <definition name="exchange.new" extends="default">  
+        <put-attribute name="body" value="/WEB-INF/jsp/exchange/new.jsp" />  
+    </definition>
+    <definition name="exchange.theme" extends="default">  
+        <put-attribute name="body" value="/WEB-INF/jsp/exchange/theme.jsp" />  
+    </definition>
+    <definition name="exchange.themeajax1" extends="ajaxwithmeta">  
+        <put-attribute name="body" value="/WEB-INF/jsp/exchange/theme.jsp" />  
+    </definition>
+    <definition name="exchange.uploadFileajax" extends="ajax">  
+        <put-attribute name="body" value="/WEB-INF/jsp/exchange/uploadFileForm.jsp" />  
+    </definition>
+    <definition name="exchange.sharedDocs" extends="default">  
+        <put-attribute name="body" value="/WEB-INF/jsp/exchange/sharedDocs.jsp" />  
+    </definition>
+    <definition name="exchange.sharedDocView" extends="default">  
+        <put-attribute name="body" value="/WEB-INF/jsp/exchange/sharedDocView.jsp" />  
+    </definition>
+    
+    <!-- knowledgebase -->
+    <definition name="knowledgebase.list" extends="default">  
+        <put-attribute name="body" value="/WEB-INF/jsp/knowledgebase/list.jsp" />  
+    </definition>
+    
+</tiles-definitions>
